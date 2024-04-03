@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+</head>
+<body>
+    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+  amazon-linux-extras install java-openjdk11 -y
+  yum install jenkins -y
+  systemctl restart jenkins
+</body>
+</html>
